@@ -1,0 +1,71 @@
+body {
+    background: #73C8A9;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #373B44, #73C8A9);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #373B44, #73C8A9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-family: 'Satisfy', cursive;
+    letter-spacing: 1px;
+    font-weight: 100;
+}
+
+.container {
+    width: 60%;
+}
+
+.col-sm-4{
+    height: 10rem;
+}
+
+.fas.fa-times, .far.fa-circle{
+    font-size: 10em;
+}
+
+.animate {
+    color: #bdc3c7;
+    animation: ongoingGame 2s;
+}
+
+.win {
+    color: lightgreen;
+    animation: endGame 2s;
+}
+
+@keyframes endGame {
+    from {color: #bdc3c7;}
+    to {color: lightgreen;}
+}
+
+@keyframes ongoingGame {
+    from {color: black;}
+    to {color: #bdc3c7;}
+}
+
+@media screen and (max-width:599px) {
+
+    body {
+        width: 100%;
+        height: 100%;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1.3rem;
+    }
+    
+    .container {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .col-sm-4{
+        height: 6em;
+        width: 33.33%;
+    }
+
+    .fas.fa-times, .far.fa-circle{
+        font-size: 3em;
+    }
+
+}
